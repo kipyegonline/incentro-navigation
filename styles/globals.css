@@ -2,8 +2,16 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  position: relative;
+  width: 100%;
+  background: transparent;
+  background-image: url("../public//sumudu-mohottige-J3cXXMsNsjw-unsplash.jpg");
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+  height: 1000px;
+  font-family: roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -13,4 +21,15 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+footer {
+  position: fixed;
+  padding: 1rem;
+  z-index: 110;
+  color: white;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }

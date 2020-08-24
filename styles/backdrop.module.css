@@ -1,0 +1,60 @@
+.backdrop {
+  z-index: 100;
+  background: rgba(3, 54, 54, 0.5);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: all 0.5s linear;
+}
+
+.backdropIn {
+  animation: navin linear 0.5s 1 forwards alternate;
+  transition: transform 0.5s linear;
+}
+.backdropOut {
+  animation: navout linear 0.75s 1 forwards alternate;
+  transition: transform 0.2s linear;
+}
+.backdropContent {
+  margin: 4rem auto;
+  padding: 2.5rem;
+}
+.backdropList {
+  color: white;
+  font-size: 2rem;
+  opacity: 0.7;
+  padding: 0.25rem 0;
+  text-align: right;
+}
+.backdropList:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+@keyframes navin {
+  0% {
+    transform: translate(2000px, 0px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate(1000px, 0px);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes navout {
+  0% {
+    transform: translate(0px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-2000px);
+    opacity: 0.5;
+  }
+}

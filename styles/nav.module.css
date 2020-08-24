@@ -1,0 +1,81 @@
+.appBar {
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 101;
+  position: fixed;
+  top: 0;
+  height: 100px;
+}
+.inc {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+  margin: 0.25rem;
+  padding: 0.5rem;
+  font-style: italic;
+  font-family: raleway;
+  font-variant-caps: all-petite-caps;
+  font-variant-ligatures: common-ligatures;
+  font-kerning: normal;
+  font-variant: normal;
+  font-size: 1.3rem;
+  z-index: 101;
+  transform: scale(30px);
+}
+.o {
+  color: red;
+}
+.ohover {
+  transition: all 1s linear;
+  animation: ohover 1s infinite linear normal;
+  color: red;
+}
+.lin {
+  transition: all 0.5s linear;
+  animation: langin 0.5s linear 1 forwards normal;
+}
+.lout {
+  transition: all 0.5s linear;
+  animation: langout 0.5s linear 1 forwards normal;
+}
+
+.lang {
+  padding: 0.5rem;
+  margin-top: 0.75rem;
+}
+@keyframes langin {
+  0% {
+    transform: translateY(-100px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(2px);
+  }
+}
+@keyframes langout {
+  0% {
+    transform: translateY(2px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes ohover {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
