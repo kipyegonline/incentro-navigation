@@ -1,30 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Intro
+
+This is a recreation of [inctro](https://careers.incetro.com/) app) careers navigation menu.
+I found it impressive...Ideally it involves a div with a backdrop whose positions are translated in and out of the page depending on user clicks on the menu bar... The menu bar relies on react state to add styles to the div containing the meu items..
+**_ Tech stack _**
+\*React js
+
+\*Next Js
+
+\*Material-ui
+
+### Repo
+
+clone the project from [Github](https://github.com/kipyegonline/incentro-navigation)
 
 ## Getting Started
 
-First, run the development server:
+First, install the project dependencies then run the development server:
 
 ```bash
+npm install
+
+
 npm run dev
-# or
-yarn dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Deployment
 
-## Learn More
+The project is available on netlify (Incentro nav)[https://incentro.netlify.app]
 
-To learn more about Next.js, take a look at the following resources:
+### Contact authors.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[kipyegonline](https://twitter.com/kipyegonline)
