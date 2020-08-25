@@ -65,10 +65,17 @@ type ListProps = {
   i: number;
 };
 
-const OppsList = ({ item, i }: ListProps): JSX.Element => (
-  <ListItem alignItems="center">
-    <Typography variant="h3" className={bd.backdropList} align="center">
-      0{i + 1}. {item}
-    </Typography>
-  </ListItem>
-);
+const OppsList = ({ item, i }: ListProps): JSX.Element => {
+  let h = globalThis.window && document.documentElement.clientWidth;
+  return (
+    <ListItem alignItems="center" className={bd.backItem}>
+      <Typography
+        variant={h <= 600 ? "h5" : "h3"}
+        className={bd.backdropList}
+        align="center"
+      >
+        0{i + 1}. {item}
+      </Typography>
+    </ListItem>
+  );
+};

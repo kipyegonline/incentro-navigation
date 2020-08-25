@@ -115,7 +115,7 @@
   height: 1em;
 }
 .landingHeader {
-  z-index: 110;
+  z-index: 99;
   color: white;
   position: fixed;
   left: 40%;
@@ -126,5 +126,14 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+  .landingHeader {
+    z-index: 99;
+    color: white;
+    position: fixed;
+    left: 30%;
+    top: 50%;
+    font-size: 2rem;
+    text-align: center;
   }
 }

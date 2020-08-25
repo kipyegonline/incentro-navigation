@@ -9,6 +9,7 @@ export default function Home() {
   const [open, setOpen] = React.useState(false);
   const [lang, setLang] = React.useState(0);
   let langs: string[] = ["English", "Kiswahili", "Dutch"];
+  let h = globalThis.window && document.documentElement.clientWidth;
   return (
     <div className={styles.container}>
       <Head>
@@ -21,14 +22,14 @@ export default function Home() {
         <Typography
           className={styles.landingHeader}
           align="center"
-          variant="h3"
+          variant={h <= 600 ? "h5" : "h3"}
         >
           {lang < 1 ? "Welcome Here" : lang < 2 ? "Karibu hapa" : "Welkom hier"}
         </Typography>
         <Divider />
       </Grid>
       <footer>
-        <Typography variant="h5">
+        <Typography variant={h <= 600 ? "body1" : "h5"}>
           Created with <span style={{ color: "red" }}>&hearts;</span> by{" "}
           <a href="https://twitter.com/kipyegonline">Vince</a>
         </Typography>

@@ -9,6 +9,7 @@ type Props = {
 import Menu from "@material-ui/icons/Menu";
 import Close from "@material-ui/icons/Close";
 import styles from "../styles/nav.module.css";
+import { Context } from "../components/context";
 
 function NavBar({ setOpen, open, lang, setLang }: Props): JSX.Element {
   const [icon, showIcon] = React.useState(false);
@@ -24,13 +25,14 @@ function NavBar({ setOpen, open, lang, setLang }: Props): JSX.Element {
     }
   };
   const handleLang = (num: number) => {
-    console.log(num);
     if (num >= 2) {
       setLang(0);
     } else {
       setLang(num + 1);
     }
   };
+  const theme = React.useContext(Context);
+
   React.useEffect(() => {
     addEventListener("scroll", handleScroll);
   }, []);
